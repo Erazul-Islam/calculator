@@ -1,15 +1,15 @@
-function handleclick(target){
+function handleclick(target) {
     document.getElementById('result').value += target;
 }
-function clearResult(){
+function clearResult() {
     document.getElementById('result').value = '';
 }
-function calculate(){
-    try{
+function calculate() {
+    try {
         const expression = document.getElementById('result').value;
         const answer = eval(expression);
         document.getElementById('result').value = answer;
-    }catch (error){
+    } catch (error) {
         document.getElementById('result').value = 'Error'
-    }
-}
+    }  
+}   
